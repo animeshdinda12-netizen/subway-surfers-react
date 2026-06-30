@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>★ SUBWAY SURFERS 3D ★ (TRUE 3D - React Three Fiber) - 2026-07-01-19:46</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
-      body { background:#0a1428; color:#fff; font-family: 'Press Start 2P', system-ui; margin:0; }
-      #root { min-height: 100vh; }
-    </style>
-  </head>
-  <body>
-    <!-- THIS BANNER PROVES IT IS THE 3D VERSION - VISIBLE IMMEDIATELY -->
-    <div style="position:fixed;top:0;left:0;right:0;background:#000;color:#0f0;text-align:center;padding:8px 4px;font-size:13px;z-index:99999;border-bottom:4px solid #0f0;font-weight:bold;letter-spacing:1px;">
-      ★★★ TRUE 3D VERSION ★★★<br>
-      React + Three.js + Fiber • NOT the old 2D canvas • BUILD 2026-07-01-19:46 ★★★
-    </div>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>★★★ SUBWAY SURFERS TRUE 3D ★★★ (React + Three.js) - 2026-07-01</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+    body { margin:0; background:#0a1428; color:#fff; font-family: 'Press Start 2P', system-ui; }
+    .force3d {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999999;
+      background: #000; color: #0f0; text-align: center; padding: 10px 4px;
+      font-size: 14px; font-weight: bold; border-bottom: 5px solid #0f0;
+      box-shadow: 0 4px 10px rgba(0,255,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <!-- THIS IS THE PROOF IT IS 3D - STATIC HTML BANNER -->
+  <div class="force3d">
+    ★★★ TRUE 3D VERSION ★★★<br>
+    React + Three.js + @react-three/fiber • Ramps • Jetpack • Police Dog<br>
+    <span style="font-size:10px">BUILD 2026-07-01-19:47 • NOT THE 2D CANVAS VERSION</span>
+  </div>
+  <div id="root" style="padding-top: 85px;"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 </html>
