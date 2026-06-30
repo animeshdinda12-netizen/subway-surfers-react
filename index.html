@@ -7,12 +7,18 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Subway Surfers 3D • React + Three.js ★ TRUE 3D</title>
+    <title>★ SUBWAY SURFERS 3D ★ React + Three.js</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+      body { background:#0a1428; color:#fff; font-family: 'Press Start 2P', system-ui; }
+      #root { min-height: 100vh; }
     </style>
   </head>
   <body>
+    <!-- STATIC 3D CONFIRMATION BANNER (visible before React loads) -->
+    <div id="force-3d-banner" style="position:fixed; top:0; left:0; right:0; background:#111; color:#0f0; text-align:center; padding:6px 0; font-size:11px; z-index:9999; border-bottom:2px solid #0f0;">
+      ★ TRUE 3D VERSION (React + Three.js) • BUILD 3D-2026-07-01 • NOT THE 2D VERSION ★
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
