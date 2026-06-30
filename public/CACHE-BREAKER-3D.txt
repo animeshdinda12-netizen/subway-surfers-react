@@ -1,0 +1,6 @@
+CACHE BREAKER FOR GITHUB PAGES - Tue Jun 30 19:42:55 UTC 2026
+This file forces new deploy. 
+If you see 2D:
+1. Hard refresh: Ctrl + Shift + R (Windows) or Cmd + Shift + R (Mac)
+2. Or open in private/incognito window
+3. Or wait 2-5 minutes
