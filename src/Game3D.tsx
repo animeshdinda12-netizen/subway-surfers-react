@@ -294,6 +294,7 @@ function GameScene({ playerPos, obstacles, coins, powerUps, trackOffset, dogPosi
 
 // ==================== MAIN GAME ====================
 export default function True3DSubwaySurfers() {
+  // 3D ONLY - DEPLOYED 2026-07-01 - NOT THE OLD 2D CANVAS VERSION
   const [gameState, setGameState] = useState<GameState>({
     score: 0, coins: 0, distance: 0, highScore: 0,
     isRunning: false, isPaused: false, isGameOver: false, grayscale: false, multiplier: 1, streak: 0
