@@ -589,7 +589,11 @@ export default function True3DSubwaySurfers() {
         {!gameState.isRunning && !gameState.isGameOver && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.88)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pointerEvents: 'all' }}>
             <h1 style={{ fontSize: 46, color: '#ffcc22', marginBottom: 4 }}>SUBWAY SURFERS</h1>
-            <p style={{ color: '#aaa', marginBottom: 28 }}>TRUE 3D • React + Three.js</p>
+            <div style={{ color: '#00ff00', fontSize: 14, fontWeight: 'bold', margin: '4px 0 12px', letterSpacing: '3px', border: '1px solid #00ff00', padding: '2px 10px', display: 'inline-block' }}>
+              ★ TRUE 3D VERSION (React + Three.js) ★
+            </div>
+            <p style={{ color: '#aaa', marginBottom: 20 }}>Ramps • Jetpack • Police Dog • Inspector • Moving Trains</p>
+            <div style={{position:'absolute', top:6, right:6, fontSize:9, color:'#0f0', background:'#111', padding:'1px 5px', border: '1px solid #0f0'}}>3D ONLY</div>
             <div style={{ marginBottom: 32, fontSize: 12, textAlign: 'center', lineHeight: 1.7 }}>
               ← → Lanes &nbsp; SPACE Jump &nbsp; ↓ Slide<br />Jetpacks • Speed Boost • Mystery Boxes • G = Grayscale
             </div>

@@ -4,10 +4,10 @@
 3 silly config load:file:/usr/lib/node_modules/npm/npmrc
 4 silly config load:file:/home/user/.npmrc
 5 silly config load:file:/usr/etc/npmrc
-6 verbose title npm test
-7 verbose argv "test"
-8 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2026-06-30T18_54_36_705Z-
-9 verbose logfile /home/user/.npm/_logs/2026-06-30T18_54_36_705Z-debug-0.log
+6 verbose title npm run build
+7 verbose argv "run" "build"
+8 verbose logfile logs-max:10 dir:/home/user/.npm/_logs/2026-06-30T19_36_13_848Z-
+9 verbose logfile /home/user/.npm/_logs/2026-06-30T19_36_13_848Z-debug-0.log
 10 silly logfile start cleaning logs, removing 1 files
 11 silly logfile done cleaning log files
 12 verbose cwd /home/user

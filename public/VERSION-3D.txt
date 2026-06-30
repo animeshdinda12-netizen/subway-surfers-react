@@ -1,0 +1,4 @@
+TRUE 3D VERSION - FORCED DEPLOY
+Build: 2026-07-01-3D-REACT-THREE
+Game: Game3D.tsx + React Three Fiber
+Features: 3 lanes, ramps, jetpack, police dog, inspector, moving trains, full physics
