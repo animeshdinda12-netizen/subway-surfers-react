@@ -5,3 +5,5 @@ function App() {
 }
 
 export default App;
+
+// 3D VERSION - FORCED REDEPLOY 2026-07-01
