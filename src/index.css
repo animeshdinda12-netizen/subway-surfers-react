@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', system-ui, -apple-system, sans-serif;
+  background: #0a0a0f;
+  color: #fff;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 12px #222, 0 0 0 18px #111;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+  touch-action: none;
+}
+
+.ui-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ui-top {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: all;
+}
+
+.score-box, .coins-box {
+  background: rgba(0, 0, 0, 0.75);
+  border: 3px solid #ffcc00;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 3px 0 #bb9900;
+}
+
+.coins-box {
+  background: rgba(255, 204, 0, 0.15);
+  border-color: #ffcc00;
+  color: #ffdd44;
+}
+
+.ui-bottom {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  pointer-events: all;
+}
+
+.btn {
+  pointer-events: all;
+  background: #ffcc00;
+  color: #111;
+  border: none;
+  font-family: 'Press Start 2P', system-ui;
+  font-size: 14px;
+  padding: 12px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #bb9900;
+  transition: all 0.1s;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: #ffdd44;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #bb9900;
+}
+
+.btn.secondary {
+  background: #444;
+  color: #ddd;
+  border: 2px solid #666;
+  box-shadow: 0 4px 0 #333;
+}
+
+.btn.secondary:hover {
+  background: #555;
+}
+
+.start-screen, .game-over-screen {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  pointer-events: all;
+  z-index: 10;
+}
+
+.start-screen h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+  color: #ffcc00;
+  text-shadow: 4px 4px 0 #bb9900;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 13px;
+  margin-bottom: 32px;
+  color: #aaa;
+  letter-spacing: 2px;
+}
+
+.instructions {
+  margin-bottom: 40px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 320px;
+}
+
+.instructions p {
+  margin-bottom: 6px;
+}
+
+.game-over-screen h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ff4444;
+}
+
+.final-score {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #ffcc00;
+}
+
+.high-score {
+  font-size: 13px;
+  margin-bottom: 32px;
+  color: #888;
+}
+
+.mobile-controls {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  pointer-events: all;
+  z-index: 20;
+}
+
+.control-btn {
+  width: 54px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffcc00;
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.control-btn:active {
+  background: rgba(255, 204, 0, 0.3);
+  transform: scale(0.95);
+}
+
+.pause-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 30;
+  pointer-events: all;
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 3px;
+}
+
+.status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  color: #ffcc00;
+  text-shadow: 0 0 20px #ffcc00;
+  pointer-events: none;
+  font-weight: bold;
+  z-index: 40;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .start-screen h1 {
+    font-size: 30px;
+  }
+}
