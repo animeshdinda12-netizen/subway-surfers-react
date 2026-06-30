@@ -1,0 +1,2 @@
+3D VERSION CONFIRMED - BUILD TIME: $(date)
+If you still see 2D after this, do Ctrl+Shift+R or clear browser cache.
